@@ -16,9 +16,6 @@ public class Basket {
     public void fillBasket(Material material) {
 
         int freeSpace = basket.length - currentIndex;
-        if (freeSpace <= 0) {
-            throw new IllegalStateException("Корзина уже полная!");
-        }
         
         System.out.println("Дополняем корзину до полного объёма (" + freeSpace + " мест):");
 
