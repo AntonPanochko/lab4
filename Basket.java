@@ -23,8 +23,9 @@ public class Basket {
             if (material == Material.PAPER) {
                 basket[i] = new Carrot("Морковка", (byte) 15, (byte) 2);
             } else {
-                basket[i] = (i % 2 == 0) ? 
-                    new Turnip("Репка", (byte) 25, (byte) 5) : 
+                if (i % 2 == 0){
+                    basket[i] = new Turnip("Репка", (byte) 25, (byte) 5); 
+                } else
                     new Carrot("Морковка", (byte) 15, (byte) 2);
             }
         }
