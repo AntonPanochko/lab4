@@ -18,7 +18,7 @@ public class Turnip extends Vegetable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode());
+        return super.hashCode();
     }
 
     @Override
