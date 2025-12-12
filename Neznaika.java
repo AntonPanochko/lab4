@@ -23,17 +23,8 @@ public final class Neznaika extends Character {
     public void dig(Vegetable veg) {
         if (veg.isRipe()) {
             System.out.println(name + " помогает выкапывать " + veg.name + ".");
-            tryToAddToBasket(veg);
         } else {
             System.out.println(veg.name + " ещё не созрела для " + name);
-        }
-    }
-
-    private void tryToAddToBasket(Vegetable veg) {
-        try {
-            basket.addVegetable(veg, Material.BAMBOO);
-        } catch (IllegalArgumentException e) {
-            System.out.println(name + " не может добавить овощ: " + e.getMessage());
         }
     }
 
