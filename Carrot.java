@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Carrot extends Vegetable {
     public Carrot(String name, byte height, byte undergroundH) {
         super(name, height, undergroundH);
@@ -18,7 +16,7 @@ public class Carrot extends Vegetable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode());
+        return super.hashCode();
     }
 
     @Override
