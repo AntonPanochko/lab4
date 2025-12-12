@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Turnip extends Vegetable {
     public Turnip(String name, byte height, byte undergroundH) {
         super(name, height, undergroundH);
