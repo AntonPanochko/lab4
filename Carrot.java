@@ -1,4 +1,4 @@
-public class Carrot extends Vegetable {
+public final class Carrot extends Vegetable {
     public Carrot(String name, byte height, byte undergroundH) {
         super(name, height, undergroundH);
     }
